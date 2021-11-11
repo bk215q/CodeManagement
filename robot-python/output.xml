@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.4 on win32)" generated="20211110 12:43:57.418" rpa="false">
+<suite id="s1" name="TestCases" source="C:\Users\bishals\development\robot-python\TestCases">
+<suite id="s1-s1" name="Apply validations" source="C:\Users\bishals\development\robot-python\TestCases\Apply_validations.robot">
+<test id="s1-s1-t1" name="Page Contains and Page should not contains">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${var1}</arg>
+<arg>Firefox</arg>
+</arguments>
+<msg timestamp="20211110 12:43:57.651" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/'.</msg>
+<msg timestamp="20211110 12:43:57.652" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-1.log</msg>
+<status status="PASS" starttime="20211110 12:43:57.651" endtime="20211110 12:44:08.879"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:44:08.880" endtime="20211110 12:44:08.883"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>VIDEOS</arg>
+</arguments>
+<msg timestamp="20211110 12:44:08.914" level="INFO">Current page contains text 'VIDEOS'.</msg>
+<status status="PASS" starttime="20211110 12:44:08.884" endtime="20211110 12:44:08.915"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>VIDEOS11</arg>
+</arguments>
+<msg timestamp="20211110 12:44:08.964" level="INFO">Current page does not contain text 'VIDEOS11'.</msg>
+<status status="PASS" starttime="20211110 12:44:08.915" endtime="20211110 12:44:08.964"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[text()='Login']</arg>
+</arguments>
+<msg timestamp="20211110 12:44:08.965" level="INFO">Clicking element 'xpath://a[text()='Login']'.</msg>
+<status status="PASS" starttime="20211110 12:44:08.965" endtime="20211110 12:44:11.065"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="SeleniumLibrary">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>name:username</arg>
+</arguments>
+<msg timestamp="20211110 12:44:11.107" level="INFO">Current page contains text field 'name:username'.</msg>
+<status status="PASS" starttime="20211110 12:44:11.066" endtime="20211110 12:44:11.108"></status>
+</kw>
+<kw name="Page Should Not Contain Textfield" library="SeleniumLibrary">
+<doc>Verifies text field ``locator`` is not found from current page.</doc>
+<arguments>
+<arg>name:username11</arg>
+</arguments>
+<msg timestamp="20211110 12:44:11.112" level="INFO">Current page does not contain text field 'name:username11'.</msg>
+<status status="PASS" starttime="20211110 12:44:11.108" endtime="20211110 12:44:11.113"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:username</arg>
+<arg>testingworld@gmail.com</arg>
+</arguments>
+<msg timestamp="20211110 12:44:11.113" level="INFO">Typing text 'testingworld@gmail.com' into text field 'name:username'.</msg>
+<status status="PASS" starttime="20211110 12:44:11.113" endtime="20211110 12:44:11.160"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>name:remember</arg>
+</arguments>
+<msg timestamp="20211110 12:44:11.161" level="INFO">Selecting checkbox 'name:remember'.</msg>
+<status status="PASS" starttime="20211110 12:44:11.161" endtime="20211110 12:44:11.406"></status>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<arguments>
+<arg>name:remember</arg>
+</arguments>
+<msg timestamp="20211110 12:44:11.407" level="INFO">Verifying checkbox 'name:remember' is selected.</msg>
+<status status="PASS" starttime="20211110 12:44:11.407" endtime="20211110 12:44:11.424"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name:remember</arg>
+</arguments>
+<msg timestamp="20211110 12:44:11.424" level="INFO">Clicking element 'name:remember'.</msg>
+<status status="PASS" starttime="20211110 12:44:11.424" endtime="20211110 12:44:11.656"></status>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<arguments>
+<arg>name:remember</arg>
+</arguments>
+<msg timestamp="20211110 12:44:11.657" level="INFO">Verifying checkbox 'name:remember' is not selected.</msg>
+<status status="PASS" starttime="20211110 12:44:11.657" endtime="20211110 12:44:11.678"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211110 12:44:11.678" endtime="20211110 12:44:12.431"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:43:57.650" endtime="20211110 12:44:12.431" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Element text validation">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${var2}</arg>
+<arg>Firefox</arg>
+</arguments>
+<msg timestamp="20211110 12:44:12.433" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<msg timestamp="20211110 12:44:12.434" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-2.log</msg>
+<status status="PASS" starttime="20211110 12:44:12.433" endtime="20211110 12:44:20.255"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:44:20.256" endtime="20211110 12:44:20.259"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@id='tab-content1']/p</arg>
+<arg>Register now and kick start your career as a Software Testing Pro!</arg>
+</arguments>
+<msg timestamp="20211110 12:44:20.259" level="INFO">Verifying element 'xpath://div[@id='tab-content1']/p' contains exact text 'Register now and kick start your career as a Software Testing Pro!'.</msg>
+<status status="PASS" starttime="20211110 12:44:20.259" endtime="20211110 12:44:20.292"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>xpath://div[@id='tab-content1']/p</arg>
+<arg>Software Testing Pro!</arg>
+</arguments>
+<msg timestamp="20211110 12:44:20.304" level="INFO">Element 'xpath://div[@id='tab-content1']/p' contains text 'Software Testing Pro!'.</msg>
+<status status="PASS" starttime="20211110 12:44:20.292" endtime="20211110 12:44:20.304"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>HelloWorld@gmail.com</arg>
+</arguments>
+<msg timestamp="20211110 12:44:20.305" level="INFO">Typing text 'HelloWorld@gmail.com' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20211110 12:44:20.304" endtime="20211110 12:44:20.333"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211110 12:44:20.334" endtime="20211110 12:44:20.928"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:44:12.432" endtime="20211110 12:44:20.929" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="validate title and element enable and visible">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${var2}</arg>
+<arg>Firefox</arg>
+</arguments>
+<msg timestamp="20211110 12:44:20.932" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<msg timestamp="20211110 12:44:20.933" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-3.log</msg>
+<status status="PASS" starttime="20211110 12:44:20.931" endtime="20211110 12:44:29.273"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:44:29.273" endtime="20211110 12:44:29.277"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Login &amp; Sign Up Forms</arg>
+</arguments>
+<msg timestamp="20211110 12:44:29.286" level="INFO">Page title is 'Login &amp; Sign Up Forms'.</msg>
+<status status="PASS" starttime="20211110 12:44:29.277" endtime="20211110 12:44:29.286"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:44:29.286" endtime="20211110 12:44:29.319"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+</arguments>
+<msg timestamp="20211110 12:44:29.336" level="INFO">Element 'name:fld_username' is displayed.</msg>
+<status status="PASS" starttime="20211110 12:44:29.320" endtime="20211110 12:44:29.337"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:44:20.931" endtime="20211110 12:44:29.337" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20211110 12:43:57.446" endtime="20211110 12:44:29.339"></status>
+</suite>
+<suite id="s1-s2" name="Browser operations" source="C:\Users\bishals\development\robot-python\TestCases\Browser_operations.robot">
+<test id="s1-s2-t1" name="Browser_Start_Login_and_Close">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20211110 12:44:29.350" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<msg timestamp="20211110 12:44:29.351" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-4.log</msg>
+<status status="PASS" starttime="20211110 12:44:29.350" endtime="20211110 12:44:37.765"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:44:37.766" endtime="20211110 12:44:37.769"></status>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<assign>
+<var>${default_tm}</var>
+</assign>
+<msg timestamp="20211110 12:44:37.769" level="INFO">${default_tm} = 0 seconds</msg>
+<status status="PASS" starttime="20211110 12:44:37.769" endtime="20211110 12:44:37.769"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${default_tm}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:44:37.770" endtime="20211110 12:44:37.770"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20 seconds</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:44:37.771" endtime="20211110 12:44:37.783"></status>
+</kw>
+<kw name="Get Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<assign>
+<var>${default_tm}</var>
+</assign>
+<msg timestamp="20211110 12:44:37.784" level="INFO">${default_tm} = 20 seconds</msg>
+<status status="PASS" starttime="20211110 12:44:37.784" endtime="20211110 12:44:37.784"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${default_tm}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:44:37.784" endtime="20211110 12:44:37.785"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Testing</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:44:37.785" endtime="20211110 12:44:37.804"></status>
+</kw>
+<kw name="Enter Username Email and Password">
+<arguments>
+<arg>Testing</arg>
+<arg>bishalsaha623@gmail.com</arg>
+<arg>Abcv54#</arg>
+<arg>Abcv54#</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20211110 12:44:37.805" level="INFO">Typing text 'Testing' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20211110 12:44:37.805" endtime="20211110 12:44:37.837"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@name='fld_email']</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20211110 12:44:37.837" level="INFO">Typing text 'bishalsaha623@gmail.com' into text field 'xpath://input[@name='fld_email']'.</msg>
+<status status="PASS" starttime="20211110 12:44:37.837" endtime="20211110 12:44:37.882"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20211110 12:44:37.883" level="INFO">Typing text 'Abcv54#' into text field 'name:fld_password'.</msg>
+<status status="PASS" starttime="20211110 12:44:37.882" endtime="20211110 12:44:37.901"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_cpassword</arg>
+<arg>${cpassword}</arg>
+</arguments>
+<msg timestamp="20211110 12:44:37.901" level="INFO">Typing text 'Abcv54#' into text field 'name:fld_cpassword'.</msg>
+<status status="PASS" starttime="20211110 12:44:37.901" endtime="20211110 12:44:37.920"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:44:37.804" endtime="20211110 12:44:37.921"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>add_type</arg>
+<arg>home</arg>
+</arguments>
+<msg timestamp="20211110 12:44:37.922" level="INFO">Selecting 'home' from radio button 'add_type'.</msg>
+<status status="PASS" starttime="20211110 12:44:37.921" endtime="20211110 12:44:38.160"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>name:terms</arg>
+</arguments>
+<msg timestamp="20211110 12:44:38.161" level="INFO">Selecting checkbox 'name:terms'.</msg>
+<status status="PASS" starttime="20211110 12:44:38.161" endtime="20211110 12:44:38.408"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@type='submit' and @value='Sign up']</arg>
+</arguments>
+<msg timestamp="20211110 12:44:38.409" level="INFO">Clicking button 'xpath://input[@type='submit' and @value='Sign up']'.</msg>
+<status status="PASS" starttime="20211110 12:44:38.409" endtime="20211110 12:44:38.641"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>name:sex</arg>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20211110 12:44:38.643" level="INFO">Selecting options from selection list 'name:sex' by index 2.</msg>
+<status status="PASS" starttime="20211110 12:44:38.642" endtime="20211110 12:44:38.904"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>name:sex</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20211110 12:44:38.905" level="INFO">Selecting options from selection list 'name:sex' by value 1.</msg>
+<status status="PASS" starttime="20211110 12:44:38.904" endtime="20211110 12:44:39.139"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>name:sex</arg>
+<arg>Female</arg>
+</arguments>
+<msg timestamp="20211110 12:44:39.140" level="INFO">Selecting options from selection list 'name:sex' by label Female.</msg>
+<status status="PASS" starttime="20211110 12:44:39.140" endtime="20211110 12:44:39.372"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>./../Snapshots/Browser_Start_Login_and_Close.png</arg>
+</arguments>
+<msg timestamp="20211110 12:44:39.560" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Snapshots/Browser_Start_Login_and_Close.png"&gt;&lt;img src="../Snapshots/Browser_Start_Login_and_Close.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211110 12:44:39.373" endtime="20211110 12:44:39.560"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211110 12:44:39.561" endtime="20211110 12:44:40.253"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:44:29.348" endtime="20211110 12:44:40.254" critical="yes"></status>
+</test>
+<test id="s1-s2-t2" name="Browser Related Keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL1}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20211110 12:44:40.257" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/'.</msg>
+<msg timestamp="20211110 12:44:40.257" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-5.log</msg>
+<status status="PASS" starttime="20211110 12:44:40.256" endtime="20211110 12:44:50.029"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://google.com/</arg>
+</arguments>
+<msg timestamp="20211110 12:44:50.031" level="INFO">Opening url 'https://google.com/'</msg>
+<status status="PASS" starttime="20211110 12:44:50.030" endtime="20211110 12:44:51.978"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${location}</var>
+</assign>
+<msg timestamp="20211110 12:44:51.984" level="INFO">${location} = https://www.google.com/</msg>
+<status status="PASS" starttime="20211110 12:44:51.979" endtime="20211110 12:44:51.984"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${location}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:44:51.985" endtime="20211110 12:44:51.985"></status>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20211110 12:44:51.985" endtime="20211110 12:44:52.905"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${location}</var>
+</assign>
+<msg timestamp="20211110 12:44:52.927" level="INFO">${location} = https://www.thetestingworld.com/</msg>
+<status status="PASS" starttime="20211110 12:44:52.906" endtime="20211110 12:44:52.927"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${location}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:44:52.928" endtime="20211110 12:44:52.930"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211110 12:44:52.931" endtime="20211110 12:44:53.953"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:44:40.255" endtime="20211110 12:44:53.954" critical="yes"></status>
+</test>
+<test id="s1-s2-t3" name="Execute javascript at runtime">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL1}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20211110 12:44:53.958" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/'.</msg>
+<msg timestamp="20211110 12:44:53.959" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-6.log</msg>
+<status status="PASS" starttime="20211110 12:44:53.957" endtime="20211110 12:45:04.042"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:45:04.043" endtime="20211110 12:45:04.048"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0,1000)</arg>
+</arguments>
+<msg timestamp="20211110 12:45:04.049" level="INFO">Executing JavaScript:
+window.scrollTo(0,1000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20211110 12:45:04.049" endtime="20211110 12:45:04.111"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2 seconds</arg>
+</arguments>
+<msg timestamp="20211110 12:45:06.113" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211110 12:45:04.112" endtime="20211110 12:45:06.113"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211110 12:45:06.115" endtime="20211110 12:45:06.850"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:44:53.956" endtime="20211110 12:45:06.850" critical="yes"></status>
+</test>
+<test id="s1-s2-t4" name="Mouse Operations">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL1}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20211110 12:45:06.852" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/'.</msg>
+<msg timestamp="20211110 12:45:06.854" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-7.log</msg>
+<status status="PASS" starttime="20211110 12:45:06.852" endtime="20211110 12:45:16.721"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:45:16.722" endtime="20211110 12:45:16.726"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath://span[contains(text(),'VIDEOS')]</arg>
+</arguments>
+<msg timestamp="20211110 12:45:16.727" level="INFO">Simulating Mouse Over on element 'xpath://span[contains(text(),'VIDEOS')]'.</msg>
+<status status="PASS" starttime="20211110 12:45:16.727" endtime="20211110 12:45:17.023"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2 seconds</arg>
+</arguments>
+<msg timestamp="20211110 12:45:19.038" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211110 12:45:17.023" endtime="20211110 12:45:19.038"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[text()='Login']</arg>
+</arguments>
+<msg timestamp="20211110 12:45:19.040" level="INFO">Clicking link 'xpath://a[text()='Login']'.</msg>
+<status status="PASS" starttime="20211110 12:45:19.040" endtime="20211110 12:45:20.533"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name:username</arg>
+<arg>hello #</arg>
+<arg>Sending keys hello</arg>
+</arguments>
+<msg timestamp="20211110 12:45:20.535" level="INFO">Sending key(s) ('hello #', 'Sending keys hello') to name:username element.</msg>
+<msg timestamp="20211110 12:45:20.824" level="INFO">Sending keys hello #</msg>
+<msg timestamp="20211110 12:45:20.844" level="INFO">Sending keys Sending keys hello</msg>
+<status status="PASS" starttime="20211110 12:45:20.534" endtime="20211110 12:45:20.870"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>xpath://button[@type='submit']</arg>
+<arg>\\13 #Sending key(s) ('\\13',) to xpath://button[@type='submit'] element.</arg>
+</arguments>
+<msg timestamp="20211110 12:45:20.871" level="INFO">Sending key(s) ("\\13 #Sending key(s) ('\\13',) to xpath://button[@type='submit'] element.",) to xpath://button[@type='submit'] element.</msg>
+<msg timestamp="20211110 12:45:21.160" level="INFO">Sending keys \13 #Sending key(s) ('\13',) to xpath://button[@type='submit'] element.</msg>
+<status status="PASS" starttime="20211110 12:45:20.871" endtime="20211110 12:45:21.286"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211110 12:45:21.286" endtime="20211110 12:45:22.042"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:45:06.851" endtime="20211110 12:45:22.043" critical="yes"></status>
+</test>
+<test id="s1-s2-t5" name="Wait keyword commands">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL1}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20211110 12:45:22.045" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/'.</msg>
+<msg timestamp="20211110 12:45:22.046" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-8.log</msg>
+<status status="PASS" starttime="20211110 12:45:22.045" endtime="20211110 12:45:33.168"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:45:33.169" endtime="20211110 12:45:33.173"></status>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<arguments>
+<arg>xpath://a[text()='Login']</arg>
+<arg>Login</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:45:33.174" endtime="20211110 12:45:33.201"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[text()='Login'] #Clicking element 'xpath://a[text()='Login']'.</arg>
+</arguments>
+<msg timestamp="20211110 12:45:33.202" level="INFO">Clicking element 'xpath://a[text()='Login'] #Clicking element 'xpath://a[text()='Login']'.'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211110 12:45:33.450" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211110 12:45:33.207" endtime="20211110 12:45:33.450"></status>
+</kw>
+<msg timestamp="20211110 12:45:33.524" level="FAIL">InvalidSelectorException: Message: Given xpath expression "//a[text()='Login'] #Clicking element 'xpath://a[text()='Login']'." is invalid: SyntaxError: Document.evaluate: The expression is not a legal expression
+</msg>
+<status status="FAIL" starttime="20211110 12:45:33.202" endtime="20211110 12:45:33.524"></status>
+</kw>
+<status status="FAIL" starttime="20211110 12:45:22.044" endtime="20211110 12:45:33.524" critical="yes">InvalidSelectorException: Message: Given xpath expression "//a[text()='Login'] #Clicking element 'xpath://a[text()='Login']'." is invalid: SyntaxError: Document.evaluate: The expression is not a legal expression
+</status>
+</test>
+<status status="FAIL" starttime="20211110 12:44:29.343" endtime="20211110 12:45:33.528"></status>
+</suite>
+<suite id="s1-s3" name="Keywords" source="C:\Users\bishals\development\robot-python\TestCases\Keywords.robot">
+<kw name="Before each Test Suite" library="Keywords_Resource" type="setup">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Before each Test Suite</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:45:33.538" endtime="20211110 12:45:33.539"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:45:33.538" endtime="20211110 12:45:33.539"></status>
+</kw>
+<test id="s1-s3-t1" name="User Defined keyword with arguments">
+<kw name="Open Browser and Maximize" library="Keywords_Resource" type="setup">
+<doc>This keyword is used to open a browser with the given url and maximize it's window</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${user_url}</arg>
+<arg>${input_browser}</arg>
+</arguments>
+<msg timestamp="20211110 12:45:33.542" level="INFO">Opening browser 'Firefox' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<msg timestamp="20211110 12:45:33.543" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-9.log</msg>
+<status status="PASS" starttime="20211110 12:45:33.540" endtime="20211110 12:45:42.795"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:45:42.796" endtime="20211110 12:45:42.799"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:45:33.540" endtime="20211110 12:45:42.799"></status>
+</kw>
+<kw name="Get the title of the page" library="Keywords_Resource">
+<doc>This keyword fetches the title of the page anf returns it back</doc>
+<assign>
+<var>${res}</var>
+</assign>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of the current page.</doc>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20211110 12:45:42.803" level="INFO">${title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20211110 12:45:42.800" endtime="20211110 12:45:42.803"></status>
+</kw>
+<msg timestamp="20211110 12:45:42.803" level="INFO">${res} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20211110 12:45:42.800" endtime="20211110 12:45:42.803"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${res}</arg>
+</arguments>
+<msg timestamp="20211110 12:45:42.805" level="INFO">Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20211110 12:45:42.804" endtime="20211110 12:45:42.805"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>${res}</arg>
+</arguments>
+<msg timestamp="20211110 12:45:42.806" level="INFO">Typing text 'Login &amp; Sign Up Forms' into text field 'name:fld_username'.</msg>
+<status status="PASS" starttime="20211110 12:45:42.805" endtime="20211110 12:45:42.846"></status>
+</kw>
+<kw name="Close Browser Window" library="Keywords_Resource" type="teardown">
+<doc>This keyword is used to close the browser at the end of execution</doc>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211110 12:45:42.847" endtime="20211110 12:45:43.531"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:45:42.847" endtime="20211110 12:45:43.531"></status>
+</kw>
+<doc>This test case used to check functionality of resource files &amp; user-defined keywords with args and return value</doc>
+<tags>
+<tag>FRC</tag>
+<tag>Sanity</tag>
+<tag>Smoke</tag>
+</tags>
+<timeout value="50 seconds"></timeout>
+<status status="PASS" starttime="20211110 12:45:33.539" endtime="20211110 12:45:43.531" critical="yes"></status>
+</test>
+<kw name="After each Test Suite" library="Keywords_Resource" type="teardown">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>After each Test Suite</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:45:43.533" endtime="20211110 12:45:43.537"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:45:43.533" endtime="20211110 12:45:43.538"></status>
+</kw>
+<doc>this file having test case for checking the user defined keywords with agrs and return value</doc>
+<status status="PASS" starttime="20211110 12:45:33.531" endtime="20211110 12:45:43.538"></status>
+</suite>
+<suite id="s1-s4" name="Multi window handling" source="C:\Users\bishals\development\robot-python\TestCases\Multi_window_handling.robot">
+<test id="s1-s4-t1" name="Handle Multiple Browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${var1}</arg>
+<arg>Firefox</arg>
+</arguments>
+<msg timestamp="20211110 12:45:43.554" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/'.</msg>
+<msg timestamp="20211110 12:45:43.555" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-10.log</msg>
+<status status="PASS" starttime="20211110 12:45:43.554" endtime="20211110 12:45:54.675"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:45:54.676" endtime="20211110 12:45:54.684"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${var2}</arg>
+<arg>Firefox</arg>
+</arguments>
+<msg timestamp="20211110 12:45:54.684" level="INFO">Opening browser 'Firefox' to base url 'https://www.google.com'.</msg>
+<msg timestamp="20211110 12:45:54.685" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-11.log</msg>
+<status status="PASS" starttime="20211110 12:45:54.684" endtime="20211110 12:46:03.466"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:46:03.467" endtime="20211110 12:46:03.473"></status>
+</kw>
+<kw name="Switch Browser" library="SeleniumLibrary">
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:03.473" endtime="20211110 12:46:03.474"></status>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<doc>Returns the current browser window URL.</doc>
+<assign>
+<var>${url1}</var>
+</assign>
+<msg timestamp="20211110 12:46:05.516" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03BEAA70&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/url</msg>
+<msg timestamp="20211110 12:46:07.563" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00857FD0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/url</msg>
+<msg timestamp="20211110 12:46:09.610" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00857650&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/url</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211110 12:46:13.707" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0084DF70&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/screenshot</msg>
+<msg timestamp="20211110 12:46:15.749" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00862290&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/screenshot</msg>
+<msg timestamp="20211110 12:46:17.802" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00862370&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/screenshot</msg>
+<msg timestamp="20211110 12:46:19.928" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=3838): Max retries exceeded with url: /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00862470&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<status status="FAIL" starttime="20211110 12:46:11.658" endtime="20211110 12:46:19.928"></status>
+</kw>
+<msg timestamp="20211110 12:46:19.928" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=3838): Max retries exceeded with url: /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00862470&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<msg timestamp="20211110 12:46:19.941" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=3838): Max retries exceeded with url: /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/url (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00857A70&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<status status="FAIL" starttime="20211110 12:46:03.474" endtime="20211110 12:46:19.941"></status>
+</kw>
+<status status="FAIL" starttime="20211110 12:45:43.553" endtime="20211110 12:46:19.941" critical="yes">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=3838): Max retries exceeded with url: /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/url (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00857A70&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</status>
+</test>
+<test id="s1-s4-t2" name="Handle Multuple Tabs">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${var3}</arg>
+<arg>Firefox</arg>
+</arguments>
+<msg timestamp="20211110 12:46:19.945" level="INFO">Opening browser 'Firefox' to base url 'https://robotframework.org/'.</msg>
+<msg timestamp="20211110 12:46:19.946" level="INFO">Firefox driver log is always forced to to: C:\Users\bishals\development\robot-python\geckodriver-12.log</msg>
+<status status="PASS" starttime="20211110 12:46:19.944" endtime="20211110 12:46:27.838"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211110 12:46:27.838" endtime="20211110 12:46:27.841"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://a[text()='Installation instructions']</arg>
+</arguments>
+<msg timestamp="20211110 12:46:27.842" level="INFO">Clicking element 'xpath://a[text()='Installation instructions']'.</msg>
+<status status="PASS" starttime="20211110 12:46:27.841" endtime="20211110 12:46:27.889"></status>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<assign>
+<var>@{list1}</var>
+</assign>
+<msg timestamp="20211110 12:46:28.292" level="INFO">@{list1} = [ 94a4083e-a975-40cb-bcae-e7a2143e6661 | 33c58dd3-a862-4859-a921-72c806eb38e8 ]</msg>
+<status status="PASS" starttime="20211110 12:46:27.890" endtime="20211110 12:46:28.292"></status>
+</kw>
+<kw name="${win} IN [ @{list1} ]" type="for">
+<kw name="${win} = 94a4083e-a975-40cb-bcae-e7a2143e6661" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${win}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.293" endtime="20211110 12:46:28.293"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.293" endtime="20211110 12:46:28.293"></status>
+</kw>
+<kw name="${win} = 33c58dd3-a862-4859-a921-72c806eb38e8" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${win}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.294" endtime="20211110 12:46:28.294"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.293" endtime="20211110 12:46:28.294"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.292" endtime="20211110 12:46:28.294"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:19.944" endtime="20211110 12:46:28.295" critical="yes"></status>
+</test>
+<status status="FAIL" starttime="20211110 12:45:43.541" endtime="20211110 12:46:28.297"></status>
+</suite>
+<suite id="s1-s5" name="Variables and condtional statements" source="C:\Users\bishals\development\robot-python\TestCases\Variables_and_condtional_statements.robot">
+<test id="s1-s5-t1" name="Vaiable Test">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>Hello World</arg>
+</arguments>
+<assign>
+<var>${var1}</var>
+</assign>
+<msg timestamp="20211110 12:46:28.311" level="INFO">${var1} = Hello World</msg>
+<status status="PASS" starttime="20211110 12:46:28.310" endtime="20211110 12:46:28.311"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${var1}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.311" endtime="20211110 12:46:28.313"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.305" endtime="20211110 12:46:28.315" critical="yes"></status>
+</test>
+<test id="s1-s5-t2" name="Creating List Variable Test">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>Hello</arg>
+<arg>22</arg>
+<arg>23.23</arg>
+<arg>World</arg>
+<arg>Abcd124</arg>
+</arguments>
+<assign>
+<var>@{list1}</var>
+</assign>
+<msg timestamp="20211110 12:46:28.318" level="INFO">@{list1} = [ Hello | 22 | 23.23 | World | Abcd124 ]</msg>
+<status status="PASS" starttime="20211110 12:46:28.318" endtime="20211110 12:46:28.318"></status>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${list1}</arg>
+</arguments>
+<assign>
+<var>${list_length}</var>
+</assign>
+<msg timestamp="20211110 12:46:28.319" level="INFO">Length is 5</msg>
+<msg timestamp="20211110 12:46:28.319" level="INFO">${list_length} = 5</msg>
+<status status="PASS" starttime="20211110 12:46:28.319" endtime="20211110 12:46:28.319"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${list_length}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.320" endtime="20211110 12:46:28.320"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${list1}</arg>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${list_data}</var>
+</assign>
+<msg timestamp="20211110 12:46:28.323" level="INFO">${list_data} = 23.23</msg>
+<status status="PASS" starttime="20211110 12:46:28.323" endtime="20211110 12:46:28.323"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${list_data}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.324" endtime="20211110 12:46:28.324"></status>
+</kw>
+<kw name="${i} IN [ @{list1} ]" type="for">
+<msg timestamp="20211110 12:46:28.325" level="WARN">Error in file 'C:\Users\bishals\development\robot-python\TestCases\Variables_and_condtional_statements.robot' in FOR loop starting on line 19: For loop header ':for' is deprecated. Use 'FOR' instead.</msg>
+<msg timestamp="20211110 12:46:28.326" level="WARN">Error in file 'C:\Users\bishals\development\robot-python\TestCases\Variables_and_condtional_statements.robot' in FOR loop starting on line 19: Marking for loop body with '\' is deprecated. Remove markers and use 'END' instead.</msg>
+<kw name="${i} = Hello" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.330" endtime="20211110 12:46:28.331"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.330" endtime="20211110 12:46:28.331"></status>
+</kw>
+<kw name="${i} = 22" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.332" endtime="20211110 12:46:28.333"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.331" endtime="20211110 12:46:28.333"></status>
+</kw>
+<kw name="${i} = 23.23" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.333" endtime="20211110 12:46:28.334"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.333" endtime="20211110 12:46:28.334"></status>
+</kw>
+<kw name="${i} = World" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.335" endtime="20211110 12:46:28.335"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.334" endtime="20211110 12:46:28.335"></status>
+</kw>
+<kw name="${i} = Abcd124" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.336" endtime="20211110 12:46:28.337"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.336" endtime="20211110 12:46:28.337"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.325" endtime="20211110 12:46:28.337"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.317" endtime="20211110 12:46:28.339" critical="yes"></status>
+</test>
+<test id="s1-s5-t3" name="Create For Loop and prining">
+<kw name="${i} IN RANGE [ 1 | 10 ]" type="for">
+<msg timestamp="20211110 12:46:28.342" level="WARN">Error in file 'C:\Users\bishals\development\robot-python\TestCases\Variables_and_condtional_statements.robot' in FOR loop starting on line 23: For loop header ': FOR' is deprecated. Use 'FOR' instead.</msg>
+<msg timestamp="20211110 12:46:28.343" level="WARN">Error in file 'C:\Users\bishals\development\robot-python\TestCases\Variables_and_condtional_statements.robot' in FOR loop starting on line 23: Marking for loop body with '\' is deprecated. Remove markers and use 'END' instead.</msg>
+<kw name="${i} = 1" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.349" endtime="20211110 12:46:28.350"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.348" endtime="20211110 12:46:28.350"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.350" endtime="20211110 12:46:28.352"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.350" endtime="20211110 12:46:28.352"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.353" endtime="20211110 12:46:28.354"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.353" endtime="20211110 12:46:28.354"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.354" endtime="20211110 12:46:28.355"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.354" endtime="20211110 12:46:28.355"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.355" endtime="20211110 12:46:28.356"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.355" endtime="20211110 12:46:28.356"></status>
+</kw>
+<kw name="${i} = 6" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.357" endtime="20211110 12:46:28.357"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.356" endtime="20211110 12:46:28.357"></status>
+</kw>
+<kw name="${i} = 7" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.358" endtime="20211110 12:46:28.358"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.357" endtime="20211110 12:46:28.358"></status>
+</kw>
+<kw name="${i} = 8" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.359" endtime="20211110 12:46:28.360"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.358" endtime="20211110 12:46:28.360"></status>
+</kw>
+<kw name="${i} = 9" type="foritem">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.360" endtime="20211110 12:46:28.361"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.360" endtime="20211110 12:46:28.361"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.341" endtime="20211110 12:46:28.361"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.340" endtime="20211110 12:46:28.361" critical="yes"></status>
+</test>
+<test id="s1-s5-t4" name="Run keyword stored into variable">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>log to console</arg>
+</arguments>
+<assign>
+<var>${key_var}</var>
+</assign>
+<msg timestamp="20211110 12:46:28.364" level="INFO">${key_var} = log to console</msg>
+<status status="PASS" starttime="20211110 12:46:28.364" endtime="20211110 12:46:28.364"></status>
+</kw>
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${key_var}</arg>
+<arg>TestingWorld@gmail.com</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>TestingWorld@gmail.com</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.365" endtime="20211110 12:46:28.366"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.365" endtime="20211110 12:46:28.366"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.363" endtime="20211110 12:46:28.366" critical="yes"></status>
+</test>
+<test id="s1-s5-t5" name="Run keyword conditionally">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>NO</arg>
+</arguments>
+<assign>
+<var>${key_var1}</var>
+</assign>
+<msg timestamp="20211110 12:46:28.370" level="INFO">${key_var1} = NO</msg>
+<status status="PASS" starttime="20211110 12:46:28.369" endtime="20211110 12:46:28.370"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${key_var1}'=='YES'</arg>
+<arg>log to console</arg>
+<arg>Value Found</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.370" endtime="20211110 12:46:28.371"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${key_var1}'=='NO'</arg>
+<arg>log to console</arg>
+<arg>Value Not Found</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Value Not Found</arg>
+</arguments>
+<status status="PASS" starttime="20211110 12:46:28.372" endtime="20211110 12:46:28.373"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.371" endtime="20211110 12:46:28.373"></status>
+</kw>
+<status status="PASS" starttime="20211110 12:46:28.368" endtime="20211110 12:46:28.373" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20211110 12:46:28.300" endtime="20211110 12:46:28.382"></status>
+</suite>
+<status status="FAIL" starttime="20211110 12:43:57.420" endtime="20211110 12:46:28.387"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="14" fail="2">Critical Tests</stat>
+<stat pass="14" fail="2">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">FRC</stat>
+<stat pass="1" fail="0">Sanity</stat>
+<stat pass="1" fail="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="14" fail="2" id="s1" name="TestCases">TestCases</stat>
+<stat pass="3" fail="0" id="s1-s1" name="Apply validations">TestCases.Apply validations</stat>
+<stat pass="4" fail="1" id="s1-s2" name="Browser operations">TestCases.Browser operations</stat>
+<stat pass="1" fail="0" id="s1-s3" name="Keywords">TestCases.Keywords</stat>
+<stat pass="1" fail="1" id="s1-s4" name="Multi window handling">TestCases.Multi window handling</stat>
+<stat pass="5" fail="0" id="s1-s5" name="Variables and condtional statements">TestCases.Variables and condtional statements</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211110 12:46:05.516" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x03BEAA70&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/url</msg>
+<msg timestamp="20211110 12:46:07.563" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00857FD0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/url</msg>
+<msg timestamp="20211110 12:46:09.610" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00857650&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/url</msg>
+<msg timestamp="20211110 12:46:13.707" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0084DF70&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/screenshot</msg>
+<msg timestamp="20211110 12:46:15.749" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00862290&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/screenshot</msg>
+<msg timestamp="20211110 12:46:17.802" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00862370&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/screenshot</msg>
+<msg timestamp="20211110 12:46:19.928" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=3838): Max retries exceeded with url: /session/ce3538f7-ce97-4dc3-989a-31f596e6ee31/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x00862470&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
+<msg timestamp="20211110 12:46:28.325" level="WARN">Error in file 'C:\Users\bishals\development\robot-python\TestCases\Variables_and_condtional_statements.robot' in FOR loop starting on line 19: For loop header ':for' is deprecated. Use 'FOR' instead.</msg>
+<msg timestamp="20211110 12:46:28.326" level="WARN">Error in file 'C:\Users\bishals\development\robot-python\TestCases\Variables_and_condtional_statements.robot' in FOR loop starting on line 19: Marking for loop body with '\' is deprecated. Remove markers and use 'END' instead.</msg>
+<msg timestamp="20211110 12:46:28.342" level="WARN">Error in file 'C:\Users\bishals\development\robot-python\TestCases\Variables_and_condtional_statements.robot' in FOR loop starting on line 23: For loop header ': FOR' is deprecated. Use 'FOR' instead.</msg>
+<msg timestamp="20211110 12:46:28.343" level="WARN">Error in file 'C:\Users\bishals\development\robot-python\TestCases\Variables_and_condtional_statements.robot' in FOR loop starting on line 23: Marking for loop body with '\' is deprecated. Remove markers and use 'END' instead.</msg>
+</errors>
+</robot>
